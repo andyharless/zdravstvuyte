@@ -8,6 +8,7 @@ object BuonGiorno extends App {
     else if (lang=="Italian") "Buon giorno"
     else if (lang=="Spanish") "Buenos dias"
     else if (lang=="Australian") "G'day"
+    else if (lang=="Cat") "Miao"
       else "Hello"
   }
   println(greeting + ", " + who + "!")
