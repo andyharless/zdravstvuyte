@@ -1,15 +1,15 @@
 
 
 object BuonGiorno extends App {
-  val who:String = "Mondo"
-  val lang:String = "Italian"
-  val greeting:String = lang match {
-    case "French" => "Bon jour"
-    case "Italian" => "Buon giorno"
-    case "Spanish" => "Buenos dias"
-    case "Australian" => "G'day"
-    case "Cat" => "Miao"
-    case _ => "Hello"
+  val lang:String = "Spanish"
+  val values:(String,String) = lang match {
+    case "French" => ("Bon jour", "Monde")
+    case "Italian" => ("Buon giorno", "Mondo")
+    case "Spanish" => ("Buenos dias", "Mundo")
+    case "Australian" => ("G'day", "World")
+    case "Cat" => ("Miao", "Purr")
+    case _ => ("Hello", "World")
   }
+  val (greeting, who) = values
   println(greeting + ", " + who + "!")
 }
